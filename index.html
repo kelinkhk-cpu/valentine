@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine</title>
+</head>
+<body style="text-align:center; font-family:Arial; background:pink;">
+
+<h1>Would you be my Valentine? 💖</h1>
+
+<img src="valentine.jpg" style="width:300px;"><br><br>
+
+<button onclick="yes()">DA 💕</button>
+<button onclick="no()">NU 😢</button>
+
+<div id="video" style="display:none; margin-top:20px;">
+<h1>YEEEEYYYY TE IUBESC MICUTO! &lt;3</h1>
+<video width="400" controls autoplay>
+<source src="video.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+function yes() {
+  document.body.innerHTML = `
+  <h1>YEEEEYYYY TE IUBESC MICUTO! <3 💕</h1>
+  <video width="400" controls autoplay>
+  <source src="video.mp4" type="video/mp4">
+  </video>
+  `;
+}
+
+function no() {
+  alert("Mai gândește-te 😏");
+}
+</script>
+
+</body>
+</html>
