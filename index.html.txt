@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine 💖</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#yesBtn {
+    background-color: white;
+    color: #ff416c;
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+}
+
+#noBtn {
+    background-color: #8b0000;
+    color: white;
+}
+
+#videoSection {
+    display: none;
+    margin-top: 40px;
+}
+
+video {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255,255,255,0.7);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="mainContent">
+    <h1>Would you be my Valentine? 💘</h1>
+    <img src="valentine.jpg" alt="Valentine Photo">
+    <br>
+    <button id="yesBtn">DA 💖</button>
+    <button id="noBtn">NU 😢</button>
+</div>
+
+<div id="videoSection">
+    <h1>YEEEEYYYY TE IUBESC MICUTO! &lt;3 💕</h1>
+    <video controls autoplay>
+        <source src="video.mp4" type="video/mp4">
+        Browserul tău nu suportă video.
+    </video>
+</div>
+
+<script>
+document.getElementById("yesBtn").addEventListener("click", function() {
+    document.getElementById("mainContent").style.display = "none";
+    document.getElementById("videoSection").style.display = "block";
+});
+
+document.getElementById("noBtn").addEventListener("mouseover", function() {
+    this.style.position = "absolute";
+    this.style.left = Math.random() * window.innerWidth + "px";
+    this.style.top = Math.random() * window.innerHeight + "px";
+});
+</script>
+
+</body>
+</html>
